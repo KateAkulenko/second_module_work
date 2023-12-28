@@ -1,0 +1,20 @@
+{
+  "name": "finally-work-module-2",
+  "version": "1.0.0",
+  "description": "my finnaly work by module 2",
+  "main": "index.js",
+  "scripts": {
+    "dev": "sass --watch src/scss/index.scss src/index.css --style compressed"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "scss",
+    "js"
+  ],
+  "author": "Solodkui Arthur solodkuiA@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "swiper": "^11.0.5"
+  }
+}
