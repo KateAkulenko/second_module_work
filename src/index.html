@@ -11,6 +11,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- * Styles -->
     <link rel="stylesheet" href="index.css" />
   </head>
@@ -285,23 +286,25 @@
             <h2 class="section-title">get in touch</h2>
             <div class="form">
               <div class="form__info">
-                <p class="p-style">91 Nolan Extensions Suite 670</p>
-                <p class="p-style">+001 356-868-2454</p>
-                <p class="p-style">montichello@service.com</p>
-                <p class="p-style">From 07:05AM to 19:30PM</p>
+                <p class="p-style"><i class="fa-solid fa-location-dot" style="color: #7e5aff;"></i> 91 Nolan Extensions Suite 670</p>
+                <p class="p-style"><i class="fa-solid fa-phone" style="color: #7e5aff;"></i> +001 356-868-2454</p>
+                <p class="p-style"><i class="fa-solid fa-inbox" style="color: #7e5aff;"></i> montichello@service.com</p>
+                <p class="p-style"><i class="fa-sharp fa-regular fa-clock" style="color: #7e5aff;"></i> From 07:05AM to 19:30PM</p>
               </div>
               <div class="form__registration">
-                <a href="#" class="button">
-                  <span class="button__label">submit</span>
-                </a>
+                <form action="/action_page.html" method="post" target="_blank">
+                  <input type="text" name="firstname" value="Your name" class="input-style">
+                  <input type="text" name="mail" value="Your e-mail" class="input-style">
+                  <input type="submit" class="button button__label form__btn" value="submit">
+                </form>
               </div>
             </div>
           </div>  
         </div>
-         
-            
-          
-        </section>
+         </section>
+         <footer class="footer">
+          <div><img class="footer__background" src="./assets/img/footer-img.png"></div>
+         </footer>
       </main>
     </div>
     <!-- * Scripts -->
