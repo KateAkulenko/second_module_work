@@ -272,28 +272,24 @@
         <!--*Gallery-->
         <section class="gallery section-paddings">
           <div class="wrapper">
-            <h2 class="section-title">gallery</h2>
-            <div class="grid" id="grid">
-              <div class="grid__img-container1">
-                <img src="./assets/img/grid-1.png" alt="1" />
-                <svg class="grid-svg"><use xlink:href="#zoom"></use></svg>
-              </div>
-              <div class="grid__img-container2">
-                <img src="./assets/img/grid-2.png" alt="2" />
-              </div>
-              <div class="grid__img-container3">
-                <img src="./assets/img/grid-3.png" alt="3" />
-              </div>
-              <div class="grid__img-container4">
-                <img src="./assets/img/grid-4.png" alt="4" />
-              </div>
-              <div class="grid__img-container5">
-                <img src="./assets/img/grid-5.png" alt="5" />
-              </div>
-            </div>
-            <a href="#" class="button grid__btn" id="seeMoreBtn>
+            <h2 class="section-title">gallery</h2> 
+            <div id="js-gallery-content">
+              <div class="gallery__block gallery__row">
+                <div>
+                  <img src="./assets/img/grid-1.png" alt="1">
+                  <svg class="gallery__row__svg"><use xlink:href="#zoom"></use></svg>
+                </div>
+                <div class="gallery__block">
+                  <div><img src="./assets/img/grid-2.png" alt="2"></div>
+                  <div><img src="./assets/img/grid-3.png" alt="3"></div>
+                  <div><img src="./assets/img/grid-4.png" alt="4"></div>
+                  <div><img src="./assets/img/grid-5.png" alt="5"></div>
+                </div>
+              </div>  
+            </div>      
+            <button class="button gallery__btn" id="seeMoreBtn">
             <span class="button__label">see more</span>
-            </a>
+            </button>
           </div>
         </section>
         <!-- * Map-->
@@ -342,8 +338,7 @@
                         type="text"
                         name="name"
                         placeholder="Your name"
-                        class="input-style"
-                        class="js-input"
+                        class="js-input input-style"
                         id="name"
                         required
                       />
@@ -354,8 +349,7 @@
                         type="email"
                         name="email"
                         placeholder="Your e-mail"
-                        class="input-style"
-                        class="js-input"
+                        class="js-input input-style"
                         id="email"
                         required
                       />

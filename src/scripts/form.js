@@ -1,6 +1,5 @@
 const form = document.querySelector('.js-form');
-const inputFields = form.getElementsByClassName('.js-input');
-
+const inputFields = form.getElementsByClassName('js-input');
 for (const item of inputFields) {
   item.addEventListener('blur', (event) => {
     validateform(event);
@@ -10,15 +9,16 @@ for (const item of inputFields) {
 const setError = (element, message) => {
   const errorSection = element.parentElement.querySelector('.form__error');
   errorSection.innerText = message;
-  element.classlist.add('invalid');
-  element.classlist.remove('valid');
+  element.classList.add('invalid');
+  element.classList.remove('valid');
 };
 
 const setValid = (element) => {
   const errorSection = element.parentElement.querySelector('.form__error');
   errorSection.innerText = '';
-  element.classlist.remove('invalid');
-  element.classlist.add('valid');
+  element.classList.remove('invalid');
+  element.classList.add('valid');
+
 };
 
 const validateName = (nameField) => {
