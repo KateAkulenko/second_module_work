@@ -1,17 +1,17 @@
 .button {
-  background: var(--c-white);
-  padding: 16px 41px;
   border: 1px solid var(--c-blue-dark);
-  display: flex;
+  background: var(--c-white);
   max-width: max-content;
+  padding: 16px 41px;
+  display: flex;
 
 &__label {
 font-family: var(--f-montserrat);
-color: var(--c-black);
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
 text-transform: uppercase;
+color: var(--c-black);
+font-style: normal;
+line-height: normal;
+font-weight: 400;
+font-size: 14px;
 }
 }

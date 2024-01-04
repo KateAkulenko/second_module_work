@@ -9,10 +9,10 @@
     background-size: cover;
     display: inline-block;
     position: absolute;
-    top: 0;
-    left: 0;
     height: 100%;
     width: 100%;
+    top: 0;
+    left: 0;
   }
 
   &__title {
@@ -64,32 +64,30 @@
     flex-direction: column;
   }
   .swiper-pagination-bullet {
-    border: 1px solid var(--c-white);
-    opacity: 1;
-    width: 12px;
-    height: 12px;
     background-color: var(--c-blue-2);
+    border: 1px solid var(--c-white);
+    height: 12px;
+    width: 12px;
+    opacity: 1;
   }
 
   .swiper-pagination-bullet-active {
-    background-color: #fff;
-    
+    background-color: var(--c-white);
   }
 }
 
 .scroll-down {
-  z-index: 3;
+  transform: translateX(-50%);
   position: absolute;
   bottom: 40px;
+  z-index: 3;
   left: 50%;
-  transform: translateX(-50%);
 
   &__svg {
-  width: 40px;
-  height: 40px;
+  stroke: var(--c-white);
+  fill: var(--c-white);
   stroke-width: 2px;
-  stroke: #FFF;
-  fill: #FFF;
- 
+  height: 40px;
+  width: 40px;
   }
 }
