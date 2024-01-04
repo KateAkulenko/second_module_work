@@ -6,3 +6,30 @@
     object-fit: cover;
   }
 }
+.wrapper {
+  &__footer {
+    justify-content: center;
+    display: flex;
+  }
+}
+
+.divFooterInfo {
+  justify-content: space-between;
+  flex-direction: row;
+  padding-bottom: 100px;
+  padding-top: 200px;
+  display: flex;
+  width: 700px;
+  
+  &__left {
+    justify-content: space-between;
+    flex-direction: column;
+    display: flex;
+    width: 50%;
+    gap: 40px;
+
+    &__copyright {
+      color: var(--c-white);
+    }
+  }
+}
