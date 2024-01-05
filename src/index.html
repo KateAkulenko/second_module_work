@@ -267,6 +267,11 @@
         <section class="latestnews section-paddings" id="latest-news">
           <div class="wrapper">
             <h2 class="section-title section-title--white">latest news</h2>
+            <div class="swiper swiperNews">
+              <div class="swiper-wrapper" id="js-item">
+              </div>
+              <div class="swiper-pagination swiperNews__pagination"></div>
+            </div>
           </div>
         </section>
         <!--*Gallery-->
@@ -275,9 +280,9 @@
             <h2 class="section-title">gallery</h2>
             <div id="js-gallery-content">
               <div class="gallery__block gallery__row">
-                <div>
+                <div class="gallery__block-big">
                   <img src="./assets/img/grid-1.png" alt="1" />
-                  <svg class="gallery__row__svg">
+                  <svg class="gallery__icon">
                     <use xlink:href="#zoom"></use>
                   </svg>
                 </div>
@@ -374,6 +379,7 @@
       </main>
     </div>
     <!-- * Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="./index.js"></script>
   </body>
 </html>

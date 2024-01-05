@@ -6,21 +6,26 @@
     gap: 10px;
   }
 
+  &__block-big {
+    position: relative;
+  }
+
+  &__icon {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    z-index: 2;
+    left: 50%;
+    top: 50%;
+  }
+
   &__row {
     position: relative;
     &:nth-child(2n) {
       &>.gallery__block {
         order: -1;
       }
-    }
-    &__svg {
-      transform: translate(-50%, -50%);
-      position: absolute;
-      height: 70px;
-      width: 70px;
-      z-index: 2;
-      left: 50%;
-      top: 50%;
     }
   }
 
