@@ -2,11 +2,40 @@
   border: 1px solid var(--c-black);
   transform: translateX(-50%);
   background: var(--c-white);
-  padding: 90px 50px 68px;
+  padding: 90px 50px 70px;
   position: absolute;
   bottom: -150px;
   height: 450px;
-  width: 770px;
+  max-width: 770px;
+  width: 100%;
   z-index: 2;
   left: 50%;
+
+  &__title {
+    font-family: var(--f-montserrat);
+    color: var(--c-blue-dark);
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    text-align: center;
+    position: relative;
+    font-weight: 700;
+    font-size: 44px;
+    &::before {
+      content: '';
+      background-color: var(--c-blue-dark);
+      transform: translateX(-50%);
+      display: inline-block;
+      position: absolute;
+      width: 100px;
+      height: 1px;
+      top: -30px;
+      left: 50%;
+    }
+    &--white {
+      color: var(--c-white);
+      &::before {
+        background-color: var(--c-white);
+      }
+    }
+  }
   }

@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+function header () {
   const header = document.getElementById('header');
 
   window.addEventListener('scroll', function () {
@@ -8,4 +8,6 @@ document.addEventListener('DOMContentLoaded', function () {
       header.style.backgroundColor = 'transparent';
     }
   });
-});
+};
+
+export default header;

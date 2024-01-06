@@ -1,6 +1,18 @@
-import './scripts/banner.js';
-import './scripts/form.js';
-import './scripts/header.js';
-import './scripts/gallery.js';
-import './scripts/footer.js';
-import './scripts/latestNews.js';
+
+import header from './scripts/header.js';
+import gallery from './scripts/gallery.js';
+import swiperBanner from './scripts/banner-slider.js';
+import latestNews from './scripts/latest-news-slider.js';
+import formRegistration from './scripts/form-registration.js';
+import footer from "./scripts/footer.js";
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  header ();
+  swiperBanner ();
+  latestNews ();
+  gallery();
+  formRegistration ();
+  footer ();
+  
+});

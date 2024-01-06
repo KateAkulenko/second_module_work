@@ -146,8 +146,10 @@
                 target="_blank"
                 title="Twitter"
               >
-                <svg class="icon"><use xlink:href="#icon-twitter"></use></svg
-              ></a>
+                <svg class="icon">
+                  <use xlink:href="#icon-twitter"></use>
+                </svg>
+              </a>
             </li>
             <li class="social__item">
               <a
@@ -156,13 +158,13 @@
                 target="_blank"
                 title="Instagram"
               >
-                <svg class="icon"><use xlink:href="#icon-instagram"></use></svg
+                <svg class="icon">
+                  <use xlink:href="#icon-instagram"></use></svg
               ></a>
             </li>
           </ul>
         </div>
       </header>
-
       <main>
         <!-- * Banner-->
         <div class="banner">
@@ -202,10 +204,10 @@
             <div class="swiper-pagination"></div>
           </div>
           <div class="scroll-down">
-            <a href="#latest-news"
-              ><svg class="scroll-down__svg">
-                <use xlink:href="#scroll-down"></use></svg
-            ></a>
+            <a href="#latest-news">
+              <svg class="scroll-down__svg">
+                <use xlink:href="#scroll-down"></use>
+              </svg></a>
           </div>
         </div>
 
@@ -216,10 +218,10 @@
             <div class="projects__wrapper">
               <div class="projects__card">
                 <div class="projects__img-block">
-                  <img src="./assets/img/building_1.png" alt="" />
+                  <img src="./assets/img/building_1.png" alt="hhh" />
                 </div>
                 <div class="content">
-                  <p class="content__subtitle">one word</p>
+                  <div class="content__subtitle">one word</div>
                   <h3 class="content__title">trade center</h3>
                   <p class="content__description">
                     Increasing prosperity in our lives can be accomplished by
@@ -229,12 +231,14 @@
                   <a href="#" class="button">
                     <span class="button__label">more details</span>
                   </a>
-                  <a href="#" class="content__location"
-                    ><span
-                      ><svg class="icon">
-                        <use xlink:href="#point"></use></svg></span
-                    >New York City, United States - 1776 feet</a
-                  >
+                  <address>
+                    <a href="#">
+                      <svg class="icon">
+                        <use xlink:href="#point"></use>
+                      </svg>
+                      <span>New York City, United States - 1776 feet</span>
+                    </a>
+                  </address>
                 </div>
               </div>
               <div class="projects__card projects__card--reverse">
@@ -252,26 +256,28 @@
                   <a href="#" class="button">
                     <span class="button__label">more details</span>
                   </a>
-                  <a href="#" class="content__location"
-                    ><span
-                      ><svg class="icon">
-                        <use xlink:href="#point"></use></svg></span
-                    >Hong Kong - 1588 feet</a
-                  >
+                  <a href="#" class="content__location">
+                    <span>
+                      <svg class="icon">
+                        <use xlink:href="#point">
+                        </use>
+                      </svg>
+                    </span>Hong Kong - 1588 feet</a>
                 </div>
               </div>
             </div>
           </div>
         </section>
         <!-- * latest news -->
-        <section class="latestnews section-paddings" id="latest-news">
+        <section class="latest-news section-paddings" id="latest-news">
           <div class="wrapper">
             <h2 class="section-title section-title--white">latest news</h2>
-            <div class="swiper swiperNews">
-              <div class="swiper-wrapper" id="js-item">
-              </div>
-              <div class="swiper-pagination swiperNews__pagination"></div>
+            <div class="swiper latest-news-slider">
+              <div class="swiper-wrapper" id="js-latest-news-slider"></div>
+              <div class="swiper-pagination latest-news-slider__pagination"></div>
             </div>
+            <div class="swiper-button-next latest-news-slider__btn-next"></div>
+            <div class="swiper-button-prev latest-news-slider__btn-prev"></div>
           </div>
         </section>
         <!--*Gallery-->
@@ -300,7 +306,7 @@
           </div>
         </section>
         <!-- * Map-->
-        <section>
+        <section style="position: relative">
           <div class="map">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80773.70400694996!2d25.318323225781256!3d50.75372841903943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47259754e2a50ec7%3A0x394e1f31d806b488!2z0KLQoNCmINCf0L7RgNGCQ2l0eQ!5e0!3m2!1suk!2sua!4v1703885702762!5m2!1suk!2sua"
@@ -310,66 +316,62 @@
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-            <div class="contact">
-              <h2 class="section-title">get in touch</h2>
-              <div class="form">
-                <div class="form__info">
-                  <p class="p-style">
-                    <i
-                      class="fa-solid fa-location-dot"
-                      style="color: #7e5aff"
-                    ></i>
-                    91 Nolan Extensions Suite 670
-                  </p>
-                  <p class="p-style">
-                    <i class="fa-solid fa-phone" style="color: #7e5aff"></i>
-                    +001 356-868-2454
-                  </p>
-                  <p class="p-style">
-                    <i class="fa-solid fa-inbox" style="color: #7e5aff"></i>
-                    montichello@service.com
-                  </p>
-                  <p class="p-style">
-                    <i
-                      class="fa-sharp fa-regular fa-clock"
-                      style="color: #7e5aff"
-                    ></i>
-                    From 07:05AM to 19:30PM
-                  </p>
-                </div>
-                <div class="form__registration">
-                  <form class="js-form">
-                    <div>
-                      <input
-                        type="text"
-                        name="name"
-                        placeholder="Your name"
-                        class="js-input input-style"
-                        id="name"
-                        required
-                      />
-                      <div class="form__error"></div>
-                    </div>
-                    <div>
-                      <input
-                        type="email"
-                        name="email"
-                        placeholder="Your e-mail"
-                        class="js-input input-style"
-                        id="email"
-                        required
-                      />
-                      <div class="form__error"></div>
-                    </div>
-                    <button
-                      type="submit"
-                      class="button button__label form__btn"
-                    >
-                      Submit
-                    </button>
-                  </form>
-                </div>
+            >
+            </iframe>
+          </div>
+          <div class="contact">
+            <h2 class="contact__title">get in touch</h2>
+            <div class="form">
+              <div class="form__info">
+                <a href="https://maps.app.goo.gl/fnRDroQA3DHgGh2Z7"
+                  target="_blank"
+                  class="form__contact-style">
+                  <i class="fa-solid fa-location-dot" style="color: #7e5aff">
+                  </i>
+                  91 Nolan Extensions Suite 670
+                </a>
+                <a href="tel:+0013568682454" class="form__contact-style">
+                  <i class="fa-solid fa-phone" style="color: #7e5aff"></i>
+                  +001 356-868-2454
+                </a>
+                <a href="mailto:montichello@service.com" class="form__contact-style">
+                  <i class="fa-solid fa-inbox" style="color: #7e5aff"></i>
+                  montichello@service.com
+                </a>
+                <time datetime="" class="form__contact-style">
+                  <i class="fa-sharp fa-regular fa-clock"
+                    style="color: #7e5aff">
+                  </i>
+                  From 07:05AM to 19:30PM
+                </time>
+              </div>
+              <div class="form__registration">
+                <form class="js-form-registration">
+                  <div>
+                    <input
+                      type="text"
+                      name="name"
+                      placeholder="Your name"
+                      class="js-registration-input form__registration__input-style"
+                      id="name"
+                      required />
+                    <div class="form__error"></div>
+                  </div>
+                  <div>
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder="Your e-mail"
+                      class="js-registration-input form__registration__input-style"
+                      id="email"
+                      required
+                    />
+                    <div class="form__error"></div>
+                  </div>
+                  <button type="submit" class="button button__label form__btn">
+                    Submit
+                  </button>
+                </form>
               </div>
             </div>
           </div>
@@ -377,7 +379,7 @@
         <!-- * Footer -->
         <footer></footer>
       </main>
-    </div>
+      </div>
     <!-- * Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="./index.js"></script>

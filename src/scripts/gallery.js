@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+function gallery () {
   const seeMoreBtn = document.getElementById('seeMoreBtn');
   const galleryContent = document.getElementById('js-gallery-content');
 
@@ -42,4 +42,6 @@ document.addEventListener('DOMContentLoaded', function () {
     galleryContent.appendChild(block);
     block.scrollIntoView({ behavior: "smooth" });
   });
-});
+};
+
+export default gallery;
