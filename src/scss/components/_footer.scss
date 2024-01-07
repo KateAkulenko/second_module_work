@@ -1,5 +1,5 @@
 .footer {
-  background: linear-gradient(251deg, #7E5AFF -2.19%, #55B7FF 103.21%);
+  background: linear-gradient(251deg, #7e5aff -2.19%, #55b7ff 103.21%);
   position: relative;
   overflow: hidden;
 
@@ -9,10 +9,10 @@
   }
 
   &__wrapper {
-      justify-content: center;
-      display: flex;
-      padding-top: 320px;
-      padding-bottom: 120px;
+    justify-content: center;
+    display: flex;
+    padding-top: 320px;
+    padding-bottom: 120px;
   }
 
   &__info {
@@ -21,19 +21,17 @@
     display: flex;
     max-width: 770px;
     width: 100%;
-    
+
     &__logo-copywrite {
       justify-content: space-between;
       flex-direction: column;
       display: flex;
       width: 50%;
       gap: 40px;
-  
+
       &__copyright {
         color: var(--c-white);
       }
     }
   }
 }
-
-

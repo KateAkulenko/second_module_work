@@ -19,6 +19,12 @@ function latestNews () {
             slidesPerView: 3,
             spaceBetween: 30,
             freeMode: true,
+            // breakpoints: {
+            //   758: {
+            //     slidesPerView: 2,
+            //     spaceBetween: 20
+            //   },
+            // },
             pagination: {
               el: ".swiper-pagination",
               clickable: true,

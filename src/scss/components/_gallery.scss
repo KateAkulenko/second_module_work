@@ -23,7 +23,7 @@
   &__row {
     position: relative;
     &:nth-child(2n) {
-      &>.gallery__block {
+      & > .gallery__block {
         order: -1;
       }
     }

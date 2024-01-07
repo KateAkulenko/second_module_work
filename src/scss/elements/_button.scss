@@ -5,13 +5,13 @@
   padding: 16px 41px;
   display: flex;
 
-&__label {
-font-family: var(--f-montserrat);
-text-transform: uppercase;
-color: var(--c-black);
-font-style: normal;
-line-height: normal;
-font-weight: 400;
-font-size: 14px;
-}
+  &__label {
+    font-family: var(--f-montserrat);
+    text-transform: uppercase;
+    color: var(--c-black);
+    font-style: normal;
+    line-height: normal;
+    font-weight: 400;
+    font-size: 14px;
+  }
 }
