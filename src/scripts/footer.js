@@ -28,11 +28,11 @@ function footer() {
 
   const footerSocial = document.createElement('div');
   const social = document.createElement('ul');
-  social.classList.add('social');
+  social.classList.add('social-footer');
   const socialItem = document.createElement('li');
-  socialItem.classList.add('social__item');
+  socialItem.classList.add('social-footer__item');
   const socialLink = document.createElement('a');
-  socialLink.classList.add('social__link');
+  socialLink.classList.add('social-footer__link');
   socialLink.href = 'https://www.facebook.com/';
   socialLink.setAttribute('target', '_blank');
   const socIcon = document.createElementNS('http://www.w3.org/2000/svg', 'svg');

@@ -5,7 +5,7 @@ import swiperBanner from './scripts/banner-slider.js';
 import latestNews from './scripts/latest-news-slider.js';
 import formRegistration from './scripts/form-registration.js';
 import footer from "./scripts/footer.js";
-
+import './scripts/burger-menu.js';
 
 document.addEventListener("DOMContentLoaded", () => {
   header ();
