@@ -2,3 +2,10 @@
   max-width: 240px;
   display: flex;
 }
+
+
+@media screen and (max-width: 900px) {
+  .logo {
+    max-width: 190px;
+  }
+}

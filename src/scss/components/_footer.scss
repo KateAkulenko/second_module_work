@@ -35,3 +35,12 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .footer {
+    &__wrapper {
+      padding-top: 210px;
+      padding-bottom: 50px;
+    }
+  }
+}

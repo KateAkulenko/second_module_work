@@ -16,15 +16,19 @@ function latestNews () {
               DOMlatestNewsSlider.appendChild(latestNewsSlider);
           });
           new Swiper(".latest-news-slider", {
-            slidesPerView: 3,
-            spaceBetween: 30,
+            slidesPerView: 1,
+            spaceBetween: 10,
             freeMode: true,
-            // breakpoints: {
-            //   758: {
-            //     slidesPerView: 2,
-            //     spaceBetween: 20
-            //   },
-            // },
+            breakpoints: {
+              758: {
+                slidesPerView: 2,
+                spaceBetween: 20
+              },
+              1024: {
+                slidesPerView: 3,
+                spaceBetween: 30
+              },
+            },
             pagination: {
               el: ".swiper-pagination",
               clickable: true,

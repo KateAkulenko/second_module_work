@@ -30,3 +30,31 @@
     width: 10px;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .navigation {
+    &__list {
+      gap: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 906px) {
+  .navigation {
+    &__list {
+      gap: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .navigation {
+    &__list {
+      gap: 10px;
+    }
+
+    &__circle {
+      display: none;
+    }
+  }
+}

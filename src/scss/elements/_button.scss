@@ -15,3 +15,13 @@
     font-size: 14px;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .button {
+    padding: 14px 36px;
+
+    &__label {
+      font-size: 12px;
+    }
+  }
+}

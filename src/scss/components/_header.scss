@@ -16,3 +16,31 @@
     display: flex;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .header {
+    &__wrapper {
+      padding-bottom: 40px;
+      padding-top: 40px;
+    }
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .header {
+    &__wrapper {
+      padding-bottom: 35px;
+      padding-top: 35px;
+    }
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .header {
+    &__wrapper {
+      padding-bottom: 25px;
+      padding-top: 25px;
+    }
+  }
+}

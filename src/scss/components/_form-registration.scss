@@ -62,3 +62,29 @@
     border: 2px solid var(--c-red);
   }
 }
+
+@media screen and (max-width: 768px) {
+  .form {
+    &__contact-style {
+      font-size: 16px;
+    }
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .form {
+    flex-direction: column;
+    gap: 20px;
+    &__info {
+      flex-direction: column;
+      width: 100%;
+      gap: 20px;
+    }
+
+    &__registration {
+      align-items: flex-start;
+      width: 100%;
+      gap: 10px;
+    }
+  }
+}
