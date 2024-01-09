@@ -9,23 +9,27 @@
     background-color: var(--c-white);
     box-sizing: border-box;
     margin-bottom: 20px;
-    border-radius: 8px;
     min-height: 520px;
-    padding: 15px;
   }
 
   &__title {
+    font-family: var(--f-montserrat);
     color: var(--c-blue-dark);
-    margin-bottom: 10px;
-    margin-top: 5px;
-    &:first-letter {
-      text-transform: uppercase;
-    }
+    text-transform: uppercase;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    margin: 10px;
   }
 
   &__body {
-    color: var(--c-black);
+    font-family: var(--f-open-sans);
+    color: var(--c-blue-dark);
+    line-height: normal;
     text-align: left;
+    font-weight: 400;
+    font-size: 18px;
+    margin: 10px;
     &:first-letter {
       text-transform: uppercase;
     }

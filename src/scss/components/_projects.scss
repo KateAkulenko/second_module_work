@@ -13,8 +13,10 @@
     align-items: flex-end;
     flex-wrap: wrap;
     display: flex;
+    // padding-left: 70px;
     &--reverse {
       flex-direction: row-reverse;
+      // padding-left: 70px;
     }
   }
 
