@@ -26,7 +26,7 @@
       border-left: var(--c-white);
       border-top: var(--c-white);
       color: var(--c-black);
-      margin-bottom: 30px;
+      margin-bottom: 10px;
       line-height: 27px;
       font-size: 18px;
       opacity: 0.5;
@@ -34,6 +34,7 @@
   }
 
   &__btn {
+    margin-top: 20px;
     float: right;
   }
 
@@ -41,6 +42,7 @@
     color: var(--c-red);
     font-size: 14px;
     height: 20px;
+    margin-bottom: 10px;
   }
 
   &__contact-style {
