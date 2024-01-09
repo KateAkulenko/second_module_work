@@ -24,7 +24,7 @@ function latestNews () {
                 slidesPerView: 2,
                 spaceBetween: 20
               },
-              1024: {
+              999: {
                 slidesPerView: 3,
                 spaceBetween: 30
               },

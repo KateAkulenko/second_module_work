@@ -22,14 +22,12 @@
     &__input-style {
       width: 100%;
       border-bottom: 1px solid var(--c-black);
-      font-family: var(--f-montserrat);
       border-right: var(--c-white);
       border-left: var(--c-white);
       border-top: var(--c-white);
       color: var(--c-black);
       margin-bottom: 30px;
       line-height: 27px;
-      font-weight: 400;
       font-size: 18px;
       opacity: 0.5;
     }
@@ -67,6 +65,14 @@
   .form {
     &__contact-style {
       font-size: 16px;
+    }
+  }
+}
+
+@media screen and (max-width: 546px) {
+  .form {
+    &__contact-style {
+      font-size: 14px;
     }
   }
 }

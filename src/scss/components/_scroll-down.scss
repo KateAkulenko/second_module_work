@@ -5,13 +5,12 @@
   z-index: 3;
   left: 50%;
 
-
   &__svg {
-    scroll-behavior:smooth;
-  stroke: var(--c-white);
-  fill: var(--c-white);
-  stroke-width: 2px;
-  height: 40px;
-  width: 40px;
+    scroll-behavior: smooth;
+    stroke: var(--c-white);
+    fill: var(--c-white);
+    stroke-width: 2px;
+    height: 40px;
+    width: 40px;
   }
 }

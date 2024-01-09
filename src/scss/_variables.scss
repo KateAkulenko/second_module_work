@@ -1,20 +1,19 @@
 :root {
   // * Colors
   --c-blue-dark: #2c4058;
-  --c-blue-2: #7E5AFF;
+  --c-blue-2: #7e5aff;
   --c-blue: #55b7ff;
   --c-white: #fff;
   --c-lightgrey: #ccc;
   --c-black: #000;
   --c-red: #fc0000;
   --c-green: #1a9e0e;
-  
-  
+
   // * Fonts
   --f-source-sans-3: 'Source Sans 3', sans-serif;
   --f-montserrat: 'Montserrat', sans-serif;
   --f-open-sans: 'Open Sans', sans-serif;
 
   // * Transition
-  --t-normal: 0.35s cubic-bezier(0.4, 0, 0.2, 1)
+  --t-normal: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }

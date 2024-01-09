@@ -123,18 +123,19 @@
   // }
 }
 
-.burger.active-x span { transform: scale(0) }
-
-.burger.active-x::before{
-    top: 50%;
-    transform: rotate(-45deg) translate(0, -50%);
+.burger.active-x span {
+  transform: scale(0);
 }
 
-.burger.active-x::after{
-    bottom: 50%;
-    transform: rotate(45deg) translate(0, 50%);
+.burger.active-x::before {
+  top: 50%;
+  transform: rotate(-45deg) translate(0, -50%);
 }
 
+.burger.active-x::after {
+  bottom: 50%;
+  transform: rotate(45deg) translate(0, 50%);
+}
 
 @media screen and (max-width: 768px) {
   .latest-news-slider__btn-next {
