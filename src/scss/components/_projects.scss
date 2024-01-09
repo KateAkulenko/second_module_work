@@ -1,6 +1,5 @@
 .projects {
   background-color: var(--c-white);
-  overflow: hidden;
 
   &__wrapper {
     flex-direction: column;
@@ -13,11 +12,14 @@
     align-items: flex-end;
     flex-wrap: wrap;
     display: flex;
-    // padding-left: 70px;
-    &--reverse {
-      flex-direction: row-reverse;
-      // padding-left: 70px;
-    }
+  }
+
+  &__card-reverse {
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    display: flex;
   }
 
   &__img-block {
@@ -39,17 +41,116 @@
     }
   }
 
-  &__card--reverse {
-    .projects__img-block {
-      &::before {
-        background: var(--c-blue-2);
-        right: -40%;
-        left: auto;
+  &__img-block-reverse {
+    position: relative;
+    max-width: 630px;
+    flex-basis: 55%;
+    z-index: 2;
+
+    &::before {
+      content: '';
+      background: var(--c-blue-2);
+      display: inline-block;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      top: -50px;
+      right: -40%;
+    }
+  }
+
+  &__content {
+    padding-left: 70px;
+    flex-basis: 45%;
+
+    &__subtitle {
+      font-family: var(--f-montserrat);
+      text-transform: uppercase;
+      color: var(--c-blue-dark);
+      line-height: normal;
+      font-style: normal;
+      margin-bottom: 5px;
+      font-weight: 400;
+      font-size: 22px;
+    }
+
+    &__title {
+      font-family: var(--f-montserrat);
+      color: var(--c-blue-dark);
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      line-height: normal;
+      font-style: normal;
+      font-size: 44px;
+    }
+
+    &__description {
+      font-family: var(--f-open-sans);
+      color: var(--c-blue-dark);
+      margin-bottom: 40px;
+      font-style: normal;
+      line-height: 30px;
+      font-weight: 400;
+      font-size: 18px;
+    }
+
+    &__button {
+      margin-bottom: 60px;
+    }
+
+    &__location {
+      align-items: center;
+      margin-bottom: 20px;
+      display: flex;
+    }
+
+    &__icon {
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+  }
+
+  &__content-reverse {
+    padding-right: 70px;
+    flex-basis: 45%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .projects {
+    &__content {
+      &__title {
+        font-size: 40px;
       }
     }
-    .projects__content {
-      padding-right: 70px;
-      padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .projects {
+    &__content {
+      &__subtitle {
+        font-size: 18px;
+      }
+
+      &__title {
+        font-size: 32px;
+      }
+
+      &__description {
+        margin-bottom: 25px;
+        line-height: 22px;
+        font-size: 14px;
+      }
+        
+      &__button {
+        margin-bottom: 25px;
+      }
+      &__location {
+        margin-bottom: 10px;
+      }
     }
   }
 }
@@ -82,18 +183,26 @@
   .projects {
     &__card {
       justify-content: space-between;
+      flex-direction: column;
       align-items: flex-end;
       flex-wrap: wrap;
       display: flex;
-      flex-direction: column;
       gap: 20px;
-      &--reverse {
-        flex-direction: column;
-      }
     }
+
+    &__card-reverse {
+      flex-direction: column;
+    }
+
     &__img-block {
       &::before {
         top: -30px;
+      }
+    }
+
+    &__content {
+      &__location {
+        padding-top: 40px;
       }
     }
   }

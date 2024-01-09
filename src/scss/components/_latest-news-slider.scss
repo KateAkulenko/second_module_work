@@ -36,6 +36,12 @@
     width: 60px;
   }
 
+  @media screen and (max-width: 768px) {
+    .latest-news-slider__btn-prev {
+      display: none;
+    }
+  }
+
   &__btn-prev {
     color: var(--c-white);
     align-items: center;
@@ -44,6 +50,12 @@
     display: flex;
     height: 60px;
     width: 60px;
+  }
+
+  @media screen and (max-width: 768px) { 
+    .latest-news-slider__btn-prev {
+      display: none;
+    }
   }
 }
 

@@ -4,7 +4,6 @@ function latestNews () {
   fetch('https://jsonplaceholder.typicode.com/posts?_limit=7')
       .then(response => response.json())
       .then(posts => {
-        console.log(posts)
           posts.forEach(post => {
               const latestNewsSlider = document.createElement('div');
               latestNewsSlider.classList.add("swiper-slide");
