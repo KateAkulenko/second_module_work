@@ -35,6 +35,12 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .burger {
+    display: flex;
+  }
+}
+
 .active {
   display: flex !important;
 }
@@ -51,10 +57,4 @@
 .burger.active-x::after {
   transform: rotate(45deg) translate(0, 50%);
   bottom: 50%;
-}
-
-@media screen and (max-width: 768px) {
-  .burger {
-    display: flex;
-  }
 }

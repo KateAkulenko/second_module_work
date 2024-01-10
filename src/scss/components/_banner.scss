@@ -3,6 +3,7 @@
   position: relative;
   overflow: hidden;
   height: 800px;
+  
   &::after {
     content: '';
     background-image: url('../../src/assets/img/header-background.png');

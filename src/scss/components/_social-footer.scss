@@ -2,6 +2,12 @@
   display: flex;
   gap: 20px;
 
+  @media screen and (max-width: 380px) {
+    .social-footer {
+      gap: 15px;
+    }
+  }
+  
   &__link {
     border: 1px solid var(--c-white);
     transition: var(--t-normal);
