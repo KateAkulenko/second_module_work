@@ -20,6 +20,10 @@
     font-style: normal;
     font-weight: 700;
     margin: 10px;
+
+    &::after {
+      content: '.';
+    }
   }
 
   &__body {
@@ -32,6 +36,9 @@
     margin: 10px;
     &:first-letter {
       text-transform: uppercase;
+    }
+    &::after {
+      content: '...';
     }
   }
 }
