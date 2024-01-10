@@ -14,6 +14,7 @@ function latestNews () {
               latestNewsSlider.appendChild(postItem);
               DOMlatestNewsSlider.appendChild(latestNewsSlider);
           });
+
           new Swiper(".latest-news-slider", {
             slidesPerView: 1,
             spaceBetween: 10,
